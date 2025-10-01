@@ -29,8 +29,8 @@ func Serve() {
 	// Health check for the monitoring service itself
 	mux.Handle("GET /api/health", http.HandlerFunc(handlers.HealthCheck))
 
-	log.Println("🚀 API Response Time Monitor Server starting on http://localhost:8080")
-	log.Println("📊 Available endpoints:")
+	log.Println("API Response Time Monitor Server starting on http://localhost:8080")
+	log.Println("Available endpoints:")
 	log.Println("   GET  /api/endpoints     - List all monitored endpoints")
 	log.Println("   POST /api/endpoints     - Add new endpoint to monitor")
 	log.Println("   PUT  /api/endpoints/{id} - Update endpoint")
